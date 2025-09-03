@@ -1,10 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AcademicsMenu = () => {
   const sections = [
     {
-<<<<<<< HEAD
       title: 'Academic Departments',
       links: [
         'Computer Science Engineering',
@@ -18,13 +17,12 @@ const AcademicsMenu = () => {
       title: 'Academics',
       links: [
         'Convocation 2023',
-        'Students Feedback',
+        { name: 'Students Feedback', path: 'https://smartcookie.in/' }, 
         'Examination',
-        { name: 'E-Akademik', path: 'https://eakadamik.in/ccet/' }, // ✅ fixed
+        { name: 'E-Akademik', path: 'https://eakadamik.in/ccet/' },
         'E-Cell',
-        'NIRF',
-        { name: 'FAQs', path: '/faq' },
         { name: 'NIRF', path: '/academics/nirf' },
+        { name: 'FAQs', path: '/faq' },
       ],
     },
     {
@@ -43,46 +41,6 @@ const AcademicsMenu = () => {
         'Academic Calendar',
         { name: 'Academic Prospectus', path: '/prospectus' },
         { name: 'Affiliating University', path: 'https://puchd.ac.in/' },
-=======
-      title: "Academic Departments",
-      links: [
-        "Computer Science Engineering",
-        "Mechanical Engineering",
-        "Electronics And Communication Engineering",
-        "Civil Engineering",
-        "Applied Science",
-      ],
-    },
-    {
-      title: "Academics",
-      links: [
-        "Convocation 2023",
-        "Students Feedback",
-        {name: "Examination", path: "/examinations"},
-        { name: "E-Akademik", path: "https://eakadamik.in/ccet/" },
-        {name: "E-Cell", path: "/ecell"},
-        "NIRF",
-        { name: "FAQs", path: "/faq" },
-        { name: "NIRF", path: "/academics/nirf" },
-      ],
-    },
-    {
-      title: "Mandatory Disclosure",
-      links: [
-        "EoA Report 2024-25",
-        "Application Part-1",
-        "Application Part-2",
-        "OLD AICTE EoAs",
-      ],
-    },
-    {
-      title: "Overview",
-      links: [
-        { name: "Courses Offered", path: "/courses" }, // ✅ Now clickable
-        "Academic Calendar",
-        { name: "Academic Prospectus", path: "/prospectus" },
-        { name: "Affiliating University", path: "https://puchd.ac.in/" },
->>>>>>> 52265484056f3183c41c6488e3b25878533b2d40
       ],
     },
   ];
@@ -100,7 +58,6 @@ const AcademicsMenu = () => {
                 key={j}
                 className="hover:bg-[#FB923C] hover:text-white cursor-pointer transition-colors duration-200 px-2 py-1 rounded"
               >
-<<<<<<< HEAD
                 {typeof link === 'string' ? (
                   link
                 ) : link.path.startsWith('http') ? (
@@ -112,10 +69,6 @@ const AcademicsMenu = () => {
                   >
                     {link.name}
                   </a>
-=======
-                {typeof link === "string" ? (
-                  link
->>>>>>> 52265484056f3183c41c6488e3b25878533b2d40
                 ) : (
                   <Link to={link.path} className="block w-full h-full">
                     {link.name}

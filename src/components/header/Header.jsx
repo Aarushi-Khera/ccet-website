@@ -212,7 +212,12 @@ const Header = () => {
         },
       ]
     },
-    { label: 'Placements', path: '/placements' },
+    {
+  label: 'Placements',
+  path: 'https://www.ccet.ac.in/tnp/index.html',
+  external: true,
+},
+
     {
       label: 'Notices',
       menu: <NoticesMenu />,
@@ -339,7 +344,14 @@ const Header = () => {
                           ? 'bg-yellow-400 text-red-700 shadow-md'
                           : 'text-white hover:bg-yellow-400 hover:text-red-700 hover:shadow-md'
                       }`}
-                      onClick={() => path && navigate(path)}
+                      onClick={() => {
+                      if (label === "Placements") {
+                     window.open(path, "_blank");   // only Placements goes external
+                      } else if (path) {
+                       navigate(path);                // all other buttons use React Router
+                        }
+                      }}
+
                   >
                     {label}
                   </div>
