@@ -54,10 +54,16 @@ import BoysHostel from "./pages/BoysHostel/BoysHostel.jsx";
 import GirlsHostel from "./pages/GirlsHostel/GirlsHostel.jsx";
 import FingerPrintIssue1 from "./pages/FingerPrint/FingerPrint1.jsx";
 import FingerPrintIssue2 from "./pages/FingerPrint/FingerPrint2.jsx";
-import ExamNotice1 from "./pages/ExamNotice/ExamNotice1.jsx";
+import Webmasters from "./pages/webmasters.jsx";
+import OfficialCCET from "./pages/Officials-Page/OfficialsPage.jsx"
+
 import ExamNotice2 from "./pages/ExamNotice/ExamNotice2.jsx";
 import Scholarship from './pages/Students-Section/Scholarship.jsx';
 import Forms from './pages/Forms/Forms.jsx';
+import NBA_CSE from "./pages/NBA/NBA_CSE";
+import NBA_ECE from "./pages/NBA/NBA_ECE";
+import NBA_MECH from "./pages/NBA/NBA_MECH";
+import NBA_CIVIL from "./pages/NBA/NBA_CE";
 
 // ECE Department
 import EceOverview from "./pages/ECE-Department/ece-overview.jsx";
@@ -75,6 +81,7 @@ import ASLabs from "./pages/AS-Department/ASLabs.jsx";
 import ASResearch from "./pages/AS-Department/ASResearch.jsx";
 import ASSyllabus from "./pages/AS-Department/ASSyllabus.jsx";
 import ASTimeTable from "./pages/AS-Department/ASTimeTable.jsx";
+
 
 //Civil Department
 import CivilOverview from "./pages/Civil-Department/CivilOverview.jsx";
@@ -144,6 +151,11 @@ function App() {
                  <Route path="/administrator/rules-policies" element={<RulesPolicies />} />
                  <Route path="/administrator/audit-report" element={<AuditReport />} />
                  <Route path="/administrator/nba" element={<Nba />} />
+                <Route path="/about/ccet-official" element={<OfficialCCET/>} />
+                 <Route path="/nba/cse" element={<NBA_CSE />} />
+                 <Route path="/nba/ece" element={<NBA_ECE />} />
+                 <Route path="/nba/mech" element={<NBA_MECH />} />
+                 <Route path="/nba/civil" element={<NBA_CIVIL />} />
 
                 {/* Programmes */}
                 <Route path="/programmes/pu-leet" element={<Leet />} />
@@ -224,8 +236,11 @@ function App() {
                 {/* Notices */}
                 <Route path="/magazine/fingerprint-vii-1" element={<FingerPrintIssue1 />} />
                 <Route path="/magazine/fingerprint-vii-2" element={<FingerPrintIssue2 />} />
-                <Route path="/notices/exam-notice-1" element={<ExamNotice1 />} />
+
                 <Route path="/notices/exam-notice-2" element={<ExamNotice2 />} />
+
+                {/*Webmasters*/}
+                <Route path="/webmasters" element={<Webmasters />} />
 
             </Routes>
             <Footer />
