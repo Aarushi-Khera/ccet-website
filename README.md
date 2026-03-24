@@ -3,6 +3,8 @@
 Welcome to the **CCET College Website** project!  
 This guide will help beginners get started, contribute, and understand the setup.
 
+Note: This project is part of the official institutional website development workflow.
+
 ---
 
 ## 🚀 Project Overview
